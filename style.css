@@ -139,6 +139,14 @@ margin: 2.5rem 0rem 1.5rem 0rem;
   padding-bottom: 3rem;
 }
 
+.flex-col-spaced2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
 .platforms {
   margin-bottom: 7rem;
 }
@@ -152,6 +160,15 @@ footer {
 
 i {
   width: 30px;
+}
+
+a {
+ text-decoration: none; 
+ color: var(--DARK-GRAYISH-BLUE);
+}
+
+a:hover, i:hover {
+  color: var(--STRONG-CYAN);
 }
 
 /* Desktop version styles */
@@ -188,7 +205,6 @@ i {
   }
   .snippets2 .flex-row .flex-column {
     align-items: flex-start;
-    margin-left: 4rem;
   }
 
   .snippets2 .flex-row .flex-column p {
@@ -196,8 +212,15 @@ i {
   }
 
   .snippets2 img {
-    width: 500px;
-    height: 350px;
+    width: 650px;
+    height: 380px;
+    position: relative;
+    left: -80px;
+  }
+
+  .access img {
+    width: 600px;
+    height: 400px;
   }
 
   .tools.flex-column, .brands {
@@ -213,7 +236,7 @@ i {
     padding-top: 0;
   }
 
-  .brands.flex-col-spaced img {
+  .brands.flex-col-spaced2 img {
     width: 100px;
   }
 
