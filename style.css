@@ -31,6 +31,10 @@ h2 {
   font-size: 1.5rem;
 }
 
+h3 {
+  margin: 2rem 0rem 1rem 0rem;
+}
+
 p {
   opacity: .7;
 }
@@ -84,9 +88,19 @@ section {
   border-bottom-style: inset;
 }
 
+.btn:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
 /* #2 and #3: Snippets and acces sections */
 
-.snippets p, .access p {
+.snippets2 .flex-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.access p {
   margin: 1rem 0rem 3rem 0rem;
   text-align: center;
 }
@@ -120,14 +134,16 @@ margin: 2.5rem 0rem 1.5rem 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.5rem;
+  justify-content: space-around;
+  gap: 1rem;
+  padding-bottom: 3rem;
 }
 
 .platforms {
   margin-bottom: 7rem;
 }
 
-/* #5: Footer */
+/* #7: Footer */
 
 footer {
   padding-top: 3rem;
@@ -137,3 +153,79 @@ footer {
 i {
   width: 30px;
 }
+
+/* Desktop version styles */
+
+@media only screen and (min-width: 399px) {
+  body {
+    background: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+  }
+
+  .hero div, .platforms {
+    display: flex;
+    gap: 15px;
+  }
+
+  .btn.primary, .btn.secondary {
+    margin-bottom: 0;
+    padding: .9rem 2rem;
+  }
+  .hero, .snippets1, .access, .platforms {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+  }
+  .snippets2 .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .snippets2 .flex-row .flex-column {
+    align-items: flex-start;
+    margin-left: 4rem;
+  }
+
+  .snippets2 .flex-row .flex-column p {
+    text-align: left;
+  }
+
+  .snippets2 img {
+    width: 500px;
+    height: 350px;
+  }
+
+  .tools.flex-column, .brands {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .brands.flex-col-spaced img {
+    width: 100px;
+  }
+
+  .platforms {
+    padding-bottom: 8rem;
+  }
+
+  footer.flex-col-spaced {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    max-width: 900px;
+  }
+  .flex-col-spaced {
+    padding-bottom: 0;
+  }
+}
+
+

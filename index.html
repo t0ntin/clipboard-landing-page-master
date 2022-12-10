@@ -20,43 +20,51 @@
 <main>
   <section class="hero flex-column">
     <img class="logo" src="./images/logo.svg" alt="logo" width="100px" height="100px">
-
     <h1>
       A history of everything you copy
     </h1>
     <p>
       Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.
     </p>
-    <button class="btn primary">
-      Download for iOS
-    </button>
-    <button class="btn secondary">
-      Download for Mac
-    </button>
+    <div>
+      <button class="btn primary">
+        Download for iOS
+      </button>
+      <button class="btn secondary">
+        Download for Mac
+      </button>
+    </div>
   </section>
 
   <!-- #2: snippets section -->
-
-  <section class="snippets">
+  <section class="snippets1">
     <h2>
       Keep track of your snippets
     </h2>
     <p>
       Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.
     </p>
+  </section>
+  <section class="snippets2">
+    <div class="flex-row">
       <img src="./images/image-computer.png" alt="computer monitor" width="300px" height="230px">
-     <h2>  Quick Search</h2> 
-     <p>
-      Easily search your snippets by content, category, web address, application, and more.
-     </p>
-     <h2>iCloud Sync</h2> 
-     <p>
-      Instantly saves and syncs snippets across all your devices.
-     </p>
-     <h2>Complete History</h2> 
-     <p>
-      Retrieve any snippets from the first moment you started using the app.
-     </p>
+      <div class="flex-column">
+        <h3>  Quick Search</h3> 
+        <p>
+         Easily search your snippets by content, category, web address, application, and more.
+        </p>
+        <h3>iCloud Sync</h3> 
+        <p>
+         Instantly saves and syncs snippets across all your devices.
+        </p>
+        <h3>Complete History</h3> 
+        <p>
+         Retrieve any snippets from the first moment you started using the app.
+        </p>
+      </div>
+    </div>
+
+
   </section>
 
   <!-- #3: access section -->
@@ -78,24 +86,31 @@
   <!-- #4: Tools Section -->
 
   <section class="tools flex-column">
-    <img src="./images/icon-blacklist.svg" alt="scroll" class="blacklist-icon" width="50px" height="50px">
-    <h2>Create Blacklists</h2>
-    <p>
-      Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
-    </p>
+    <div>
+      <img src="./images/icon-blacklist.svg" alt="scroll" class="blacklist-icon" width="50px" height="50px">
+      <h3>Create Blacklists</h3>
+      <p>
+        Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+      </p>
+    </div>
+    <div>
+      <img src="./images/icon-text.svg" alt="text-icon" class="text-icon" width="50px" height="50px">
+      <h3>Plain text snippets</h3>
+      <p>
+        Remove unwanted formatting from copied text for a consistent look.
+      </p>
+    </div>
+    <div>
+      <img src="./images/icon-preview.svg" alt="eye-icon"  class="eye-icon" width="50px" height="32px">
+      <h3>Sneak preview</h3>
+      <p>
+        Quick preview of all snippets on your Clipboard for easy access.
+      </p>
+    </div>
 
-    <img src="./images/icon-text.svg" alt="text-icon" class="text-icon" width="50px" height="50px">
-    <h2>Plain text snippets</h2>
-    <p>
-      Remove unwanted formatting from copied text for a consistent look.
-    </p>
-
-    <img src="./images/icon-preview.svg" alt="eye-icon"  class="eye-icon" width="50px" height="32px">
-    <h2>Sneak preview</h2>
-    <p>
-      Quick preview of all snippets on your Clipboard for easy access.
-    </p>
   </section>
+
+<!-- $5: Brands section -->
 
   <section class="brands flex-col-spaced">
     <img src="./images/logo-google.png" alt="google logo">
@@ -103,10 +118,9 @@
     <img src="./images/logo-microsoft.png" alt="microsoft logo">
     <img src="./images/logo-hp.png" alt="hp logo">
     <img src="./images/logo-vector-graphics.png" alt="vector graphics logo">
-
   </section>
 
-  <!-- #4: Platform Availability Section -->
+  <!-- #6: Platform Availability Section -->
 
   <section class="platforms flex-column">
      <h1>
@@ -114,24 +128,29 @@
     </h1>
     <p>
       Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.
-    
     </p>
-    <button class="btn primary">
-      Download for iOS
-    </button>
-    <button class="btn secondary">
-      Download for Mac
-    </button>
+    <div>
+      <button class="btn primary">
+        Download for iOS
+      </button>
+      <button class="btn secondary">
+        Download for Mac
+      </button>
+    </div>
   </section>
 
-<!-- #5: Footer -->
+<!-- #7: Footer -->
 
   <footer class="flex-col-spaced">
     <img src="./images/logo.svg" alt="logo" width="50px" height="50px">
-    <p>FAQs</p>
-    <p>Contact Us</p>
-    <p>Press Kit</p>
-    <p>Install Guide</p>
+    <div class="footer-grid flex-col-spaced">
+      <p>FAQs</p>
+      <p>Contact Us</p>
+      <p>Privacy Policy</p>
+      <p>Press Kit</p>
+      <p>Install Guide</p>
+    </div>
+ 
     <div class="social flex-row">
       <i class="fa-brands fa-square-facebook fa-xl" width="30px"></i>
       <i class="fa-brands fa-twitter fa-xl"></i>
@@ -139,16 +158,6 @@
     </div>
   </footer>
 </main>
-  
-
-  
-
-
-  
-  
-  
-  
-  
   
   <footer>
     <p class="attribution">
